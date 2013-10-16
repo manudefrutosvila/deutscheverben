@@ -1,0 +1,43 @@
+/* para el fondo del menu dropdown */
+.dropdown-inverse > li > a {
+  color: #999999;
+}
+.dropdown-inverse > li > a:hover, .dropdown-inverse > li > a:focus,
+.dropdown-inverse > li.active > a:hover, .dropdown-inverse > li.active > a:focus,
+.dropdown-inverse > li > a:hover, .dropdown-inverse > li > a:focus, .dropdown-inverse > .active > a, .dropdown-inverse > .active > a:hover, .dropdown-inverse > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-image: none;
+  background-color: #080808;
+}
+.dropdown-inverse  .divider{
+	background-color: #080808;	
+}
+
+/*para la cabecera de la página*/
+.page-header{
+	border-bottom: none;
+	margin-top: 30px;
+}
+h1 small{
+	color: #ffca6c;
+}
+
+
+@media (max-width: 768px) {
+	.table-condensed thead > tr > th,
+	.table-condensed tbody > tr > th,
+	.table-condensed tfoot > tr > th,
+	.table-condensed thead > tr > td,
+	.table-condensed tbody > tr > td,
+	.table-condensed tfoot > tr > td {
+	  font-size:80%;
+	}
+	.table-responsive {
+		border: none;
+	}
+}
+
+.table-responsive  > .table {
+	background-color: transparent;
+}

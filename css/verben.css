@@ -1,0 +1,169 @@
+/*
+ *	Deutsche Verben Trainer.
+ *	German verbs trainer.
+ *	Entrenador de verbos alemán.
+ *
+ *	Manu de Frutos Vila <manufvdev@gmail.com>
+ *	2013
+ */
+
+address, article, aside, canvas,
+figcaption, figure, footer, header,
+hgroup, nav, section, summary {
+display: block;
+}
+
+body,p,h1,h2,h3,h4,table,td,th,ul,ol,textarea,input{
+	font-family:verdana,helvetica,arial,sans-serif;
+}
+body{
+	background-color: #ffeecc;
+	color: #A72808;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/*h1{
+	padding: 0;
+	margin: 0;
+}*/
+
+p{
+	margin-top: 0;
+}
+
+table{
+	width: 100%;
+	font-size: 14px;
+}
+
+th, td{
+	vertical-align: top;
+	text-align: left;
+}
+
+table#trainer th{
+	width: 110px;
+}
+
+a{
+	color: #A72808;
+}
+
+
+a:hover, a:active{
+	text-decoration:none;
+}
+
+aside#amenu{
+	float:left;
+	width: 25%;
+	padding: 5px;
+	padding-top: 0px;
+	/*margin: 0 0 20px 0;*/
+}
+
+article#principal{
+	float:right;
+	width: 72%;
+	margin-bottom: 20px;
+}
+
+footer{
+	clear: both;
+	color: #999999;
+	text-align: center;
+}
+footer > div{
+	padding: 15px 15px;
+}
+footer a{
+	color: #999999;
+}
+footer a:hover, footer a:focus{
+	color: #A72808;
+}
+
+#copy{
+	white-space:nowrap;
+}
+
+#cabecera, #cuerpo, #botones{
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.deutsch{
+	background-color: #FFA60D;
+	/*border-radius:5px;*/
+}
+.spanisch{
+	/*border: 1px solid #FFA60D;
+	/*border-radius:5px;
+	margin-bottom: 10px;*/
+	background-color: #A72808;
+}
+.deutsch, .spanisch{
+	color: #ffeecc;
+	/*padding: 10px 5px;*/
+}
+
+a.tryitbtn,a.tryitbtn:link,a.tryitbtn:visited{
+	display:inline-block;
+	color:#FFFFFF;
+	background-color:#FFA60D;
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+	padding-left:14px;
+	padding-right:14px;
+	padding-top:7px;
+	padding-bottom:8px;
+	text-decoration:none;
+	
+	margin-top:0px;
+	margin-bottom:5px;
+	border:1px solid #A72808;
+	border-radius:5px;
+	-moz-box-shadow: 0 1px 0 #ccc;
+	-webkit-box-shadow: 0 1px 0 #ccc;
+	box-shadow: 0 1px 0 #ccc;
+	white-space:nowrap;
+}
+
+a.tryitbtn:hover,a.tryitbtn:active{
+	color:#FFA60D;
+	background-color:#ffeecc;
+}
+
+#verboPrasens, #verboPrateritum, #verboPartizipII{
+	visibility: hidden;
+	color: black;
+}
+#hilfe{
+	display: none;
+	color: green;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#verbenliste tr:nth-child(odd) {
+   background-color: transparent;
+}
+
+#verbenliste tr:nth-child(even) {
+   background-color: #ffca6c;
+}
+
+
+@media (max-width: 768px) {
+	.verbenliste{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		width: 100%;
+	}
+}
