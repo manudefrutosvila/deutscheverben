@@ -14,6 +14,10 @@ Simplemente verás el verbo en español (en el futuro tambien en inglés), piens
 
 Si has visto algún error en la web o alguna errata en los verbos, o piensas en alguna funcionalidad interesante, por favor no dudes en enviarme tus comentarios a manufvdev@gmail.com
 
+## Copyright
+
+Copyright 2013 manufvdev, Manuel de Frutos Vila
+
 
 
 # English version
@@ -29,3 +33,7 @@ Simply you'll see the verb in spanish (later on in english too). Then you'll thi
 ## Bugs and feature requests
 
 If you have some bug tracking or you think of an improvement, please feel free to send me your comments to manufvdev@gmail.com
+
+## Copyright
+
+Copyright 2013 manufvdev, Manuel de Frutos Vila
