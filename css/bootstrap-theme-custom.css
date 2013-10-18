@@ -145,3 +145,8 @@ fieldset[disabled] .btn-dorado.active {
   background-color: #d9534f;
   border-color: #d43f3a;
 }
+
+/* label trainer */
+.label-trainer{
+	padding-right: 0;
+}
