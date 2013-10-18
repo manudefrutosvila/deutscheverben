@@ -95,19 +95,24 @@ footer a:hover, footer a:focus{
 	margin-bottom: 20px;
 }
 
-.deutsch{
+.panel-deutsch{
 	background-color: #FFA60D;
 	/*border-radius:5px;*/
 }
-.spanisch{
+.panel-spanisch{
 	/*border: 1px solid #FFA60D;
 	/*border-radius:5px;
 	margin-bottom: 10px;*/
 	background-color: #A72808;
 }
-.deutsch, .spanisch{
+.panel-deutsch, .panel-spanisch{
 	color: #ffeecc;
 	/*padding: 10px 5px;*/
+}
+.panel-andere{
+	border-color: #FFA60D;
+	background-color: transparent;
+
 }
 
 a.tryitbtn,a.tryitbtn:link,a.tryitbtn:visited{
@@ -138,16 +143,17 @@ a.tryitbtn:hover,a.tryitbtn:active{
 	background-color:#ffeecc;
 }
 
-#verboPrasens, #verboPrateritum, #verboPartizipII{
+/*#verboPrasens, #verboPrateritum, #verboPartizipII{
 	visibility: hidden;
 	color: black;
 }
 #hilfe{
-	display: none;
+	visibility: hidden;
 	color: green;
 	font-weight: bold;
 	font-size: 12px;
 }
+*/
 
 #verbenliste tr:nth-child(odd) {
    background-color: transparent;
@@ -156,7 +162,6 @@ a.tryitbtn:hover,a.tryitbtn:active{
 #verbenliste tr:nth-child(even) {
    background-color: #ffca6c;
 }
-
 
 @media (max-width: 768px) {
 	.verbenliste{

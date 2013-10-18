@@ -1577,7 +1577,7 @@ table th[class*="col-"] {
   /* CSS for Ultra-high-density (Retina) Android screens goes here *
    * Ex: Samsung Galaxy SIII, HTC Evo LTE, Samsung Galaxy Nexus */
 
-@media (max-width : 768px) {/*768   .. 47.99em*/
+@media (max-width : 389px) {/*768   .. 47.99em*/
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;

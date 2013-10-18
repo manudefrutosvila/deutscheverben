@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Unregelmäßige Verben Trainer</title>
+  <head>
+	  <title>Liste der regelmäßige Verben</title>
 
-		<meta charset="utf-8" />
+	  <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Entrenador de verbos irregulares alemán-español">
     <meta name="author" content="manufvdev">
@@ -27,6 +27,7 @@
     <![endif]-->
   
     <script type="text/javascript" src="../js/verben.js"></script>
+    <script type="text/javascript" src="../js/liste.js"></script>
   </head>
 
 	<body>
@@ -39,17 +40,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Deutsch Verben Trainer</a>
+          <a class="navbar-brand" href="../index.html">Deutsch Verben Trainer</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="../index.html">Home</a></li>
-            <li class="active"><a href="../html/unregelmassige.html">Trainer</a></li>
+            <li><a href="../html/trainer.html">Trainer</a></li>
             <li class="active dropdown dropdown-inverse">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liste <b class="caret"></b></a>
               <ul class="dropdown-menu navbar-inverse dropdown-inverse">
-                <li><a href="../html/liste.html">Komplette Liste</a></li>
+                <li class="active"><a href="../html/liste.html">Regelmäßige Liste</a></li>
                 <li class="divider"></li>
+                <li><a href="../html/liste.html">Unregelmäßige Liste</a></li>
                 <li><a href="../html/liste-nb1eoi-beatriz.html">"NB1 EOI Valencia" mit Beatriz</a></li>
                 <li><a href="../html/liste-nb1eoi-carmen.html">"NB2 EOI Valencia" mit Carmen</a></li>
               </ul>
@@ -62,51 +64,31 @@
 
     <div class="container">
 
-			<header class="page-header">
-				<h1>Unregelmäßige Verben Trainer</h1>
-			</header>
+    	<header class="page-header">
+        <h1>Liste der regelmäßige Verben</h1>
+      </header>
+    </div><!-- /.container -->
 
-			<article id="cuerpo">
+    <div class="container verbenliste">
+
+      <article id="cuerpo">
 				<section>
-					<table id="trainer">
+          <div class="table-responsive">
+					<table id="verbenliste" class="table table-condensed">
 						<tr>
-							<th>Spanisch:</th>
-							<td>
-								<p id="verboEsp"></p>
-								<p id="hilfe"></p>
-							</td>
-						</tr>
-						<tr>
-							<th>Präsens:</th>
-							<td>
-								<span id="verboPrasens"></span>
-							</td>
-						</tr>
-						<tr>
-							<th>Präteritum:</th>
-							<td>
-								<span id="verboPrateritum"></span>
-							</td>
-						</tr>
-						<tr>
-							<th>Partizip II:</th>
-							<td>
-								<span id="verboPartizipII"></span>
-							</td>
+							<th>#</th>
+							<th width="25%">Spanisch</th>
+							<th width="25%">Präsens</th>
+							<th width="25%">Präteritum</th>
+							<th width="25%">Partizip II</th>
 						</tr>
 					</table>
+        </div>
 				</section>
 			</article>
 
-			<aside id="botones">
-				<nav>
-					<a href="#" class="tryitbtn" onclick="displayHilfe()">Hilfe »</a>
-
-					<a href="#" class="tryitbtn" onclick="displayVerb()">Prüfen Sie! »</a>
-
-					<a href="#" class="tryitbtn" onclick="getRandom()">Nächste Verb »</a>
-				</nav>
-			</aside>
+    
+	</div>
 
 			<footer>
         <div class="navbar navbar-inverse navbar-fixed-bottom">
@@ -116,16 +98,18 @@
         </div>
       </footer>
 
-    </div><!-- /.container -->
+    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../js/jquery.js"></script>
+    <script src="../js/lib/jquery.js"></script>
     <script src="../bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../js/verben.js"></script>
+    <script type="text/javascript" src="../js/liste.js"></script>
 
-		<script type="text/javascript">getRandom();
-		alert("viewport: " + $( window ).width() + " - html document" + $( document ).width());</script>
+    <script type="text/javascript">//generateListe(1);</script>
 
 	</body>
 </html>
