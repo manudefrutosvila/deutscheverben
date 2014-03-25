@@ -12,18 +12,18 @@
  * muestra los verbos
  */
 function displayVerb(){
-	$('#collapsePrasens').show(200);
-	$('#collapsePrateritum').show(200);
-	$('#collapsePartizipII').show(200);
+	$('#inputPrasens').val($('#verboPrasens').html());
+	$('#inputPrateritum').val($('#verboPrateritum').html());
+	$('#inputPartizipII').val($('#verboPartizipII').html());
 }
 
 /**
  * oculta los verbos
  */
 function hideVerb(){
-	$('#collapsePrasens').hide(200);
-	$('#collapsePrateritum').hide(200);
-	$('#collapsePartizipII').hide(200, getRandom);
+	$('#inputPrasens').val("");
+	$('#inputPrateritum').val("");
+	$('#inputPartizipII').val("");
 }
 
 /**
@@ -62,6 +62,7 @@ $(function() {
 	//button nachste
 	$('#btn-nachste').click(function() {
 		hideVerb();
+		getRandom();
 	});
   
 
